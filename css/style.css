@@ -1,0 +1,87 @@
+/*wrapper라는 개념을 사용해 보자*/
+#wrapper{
+  width: 960px;
+  margin:0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hidden{
+       display:none;
+}
+
+header{
+  background-color: rgb(109, 17, 203);
+  height:70px;
+}
+
+nav{
+  background-color: rgb(186, 161, 235);
+  /*height: 65px;*/
+  height: auto;
+  position:relative;
+}
+
+/* float 사용법, margin 사용법 padding 사용법*/
+nav ul li{
+  float:left;
+  width:150px;
+  border:2px solid rgb(238, 200, 35);
+  /*margin으로 박스끼리를 배열한다*/
+  margin: 10px 50px 0 10px;
+  padding-left: 20px;
+  /**/
+  /*text-align: center;*/
+}
+
+nav div.jquerySlide{
+  height:100px;
+  position:absolute;
+  background-color:rgb(10, 202, 232);
+}
+
+/*섹션 아티클 어사이드 배치는 float와 padding, margin의 복습입니다!*/
+#mainWrapper{
+  height:800px;
+  padding-top:10px;
+}
+section{
+  background-color: rgb(232, 55, 84);
+  border: 2px solid red;
+  float: left;
+}
+
+.leftSection{
+  width: 150px;
+}
+.centerSection{
+  width: 400px;
+  margin-left:100px;
+}
+
+article{
+  background-color: rgb(152, 156, 161);
+  border: 2px solid black;
+
+}
+.asideWrapper{
+  float: right;
+  width:150px;
+  position:relative;
+}
+
+aside{
+  position:fixed;
+  background-color: rgb(81, 148, 237);
+  width:150px;
+  height:300px;
+}
+
+
+footer{
+  background-color: rgb(240, 34, 106);
+}

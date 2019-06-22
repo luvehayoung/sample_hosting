@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html과 css실습 </title>
+    <!-- 이부분이 문서에 필요한 파일들을 불러오는 환경이다
+      css javascript 등 사용하는 파일들은 항상 분리하는 습관을 가지기
+    -->
+    <!-- css 불러오기 -->
+    <link rel = "stylesheet" type = "text/css" href = "css/reset.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
+    <!-- jquery 불러오기 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jquery ui사용해보기 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- javascript 불러오기 -->
+    <script type="text/javascript" src="javascript/script.js"></script>
+
+  </head>
+
+
+  <body>
+  <div id = "wrapper">
+    <header>
+      <h1>안녕하세요, 자기소개 페이지 입니다</h1>
+      <input type="button" id="hw" value="Hello world" />
+    </header>
+
+    <nav>
+      <ul class="clearfix menubar">
+        <li>about me</li>
+        <li>my images</li>
+        <li>contact</li>
+      </ul>
+      <div class="jquerySlide toggler hidden">
+
+        <div id="effect" class="ui-widget-content ui-corner-all">
+        내려오는 부분, 제이커리로 동작을 제어할 부분
+        <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
+        <p>
+        Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+        </p>
+    </div>
+      </div>
+    </nav>
+
+    <script>
+    jQuery( document ).ready(function( $ ) {
+
+
+    // Set effect from select menu value
+        $( ".menubar" ).on( "mouseenter", function() {
+          //runEffect();
+          $(".jquerySlide").show();
+
+        });
+        //$("nav").css({'height': 165 + "px" });
+        $( "nav" ).on( "mouseleave", function() {
+          //runEffect();
+          $(".jquerySlide").hide();
+          //$("nav").css({'height': 65 + "px" });
+        });
+
+
+    });
+    </script>
+
+    <div id="mainWrapper" class="clearfix">
+    <section class="leftSection">
+      <article>왼쪽으로간다 1번째 섹션의 첫번째 아티클 목차 같은거</article>
+      <article>1번째 섹션의 첫번째 아티클 목차 같은거</article>
+      <ul>
+        <li><a href="./practice_js.html">2회수업으로 연결~</a></li>
+        <li><a href="">메뉴2</a></li>
+        <li><a href="">메뉴3</a></li>
+        <li><a href="">메뉴4</a></li>
+        <li><a href="">메뉴5</a></li>
+      </ul>
+    </section>
+
+    <section class="centerSection">
+      <article>가운데 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius doloremque atque magni iusto nihil? Earum, odio, quae ut explicabo eligendi repellat molestias temporibus ad deleniti quibusdam dolorum voluptatibus quaerat, praesentium. Repellat tempore, adipisci officia suscipit, autem similique inventore repudiandae earum nisi magnam deleniti. Pariatur debitis dignissimos nisi voluptatem, at obcaecati.</article>
+      <article>가운데2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sint blanditiis et eligendi consectetur. Laudantium quis ipsam soluta facere in cum corrupti, accusantium esse excepturi dolorem perferendis maxime eius. Vitae.</article>
+      <article>가운데3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quis quas iusto aspernatur itaque asperiores, soluta doloremque. Praesentium nostrum provident obcaecati fugit aliquid eum quibusdam possimus, cumque, incidunt culpa iure?</article>
+    </section>
+
+    <div class="asideWrapper">
+    <aside>옆에 움직이는 바</aside>
+    </div>
+    </div>
+
+    <footer>
+      <h2>바닥2  </h2>
+    </footer>
+
+
+  </div>
+  </body>
+</html>
