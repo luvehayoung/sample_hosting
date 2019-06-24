@@ -1,9 +1,31 @@
+/*
+<script>
+jQuery( document ).ready(function( $ ) {
+
+
+// Set effect from select menu value
+    $( ".menubar" ).on( "mouseenter", function() {
+      //runEffect();
+      $(".jquerySlide").show();
+
+    });
+    //$("nav").css({'height': 165 + "px" });
+    $( "nav" ).on( "mouseleave", function() {
+      //runEffect();
+      $(".jquerySlide").hide();
+      //$("nav").css({'height': 65 + "px" });
+    });
+
+
+});
+</script>*/
+//자바스크립트 실습
 //실습 1
 function test1(){
   alert("실습 버튼을 클릭하셨습니다");
 }
 
-//실습 2
+//실습 2, if문이란
 function test2(){
   var date = new Date();
   var hour = date.getHours();
@@ -15,7 +37,7 @@ function test2(){
   }
 }
 
-//실습 3, 태그의 이름으로 제어하기
+//실습 3, 태그의 이름으로 제어하기 for문이란
 function test3(){
   var lis = document.getElementsByTagName('li')
   for(var i = 0; i<lis.length; i++){
@@ -23,7 +45,7 @@ function test3(){
   }
 }
 
-//실습 4, 클래스
+//실습 4, 클래스로 제어
 function test4(){
   var lis = document.getElementsByClassName('group')
   for(var i = 0; i<lis.length; i++){
@@ -56,10 +78,24 @@ function test5(){
 
 
 window.onload = function(){
+    /*
     var hw = document.getElementById('hw');
     hw.addEventListener('click', function(){
         alert('Hello world');
     })
+    */
 
+    //제이커리 사용하기
+    $( ".menubar" ).on( "mouseenter", function() {
+      //runEffect();
+      $(".jquerySlide").show();
+
+    });
+    //$("nav").css({'height': 165 + "px" });
+    $( "nav" ).on( "mouseleave", function() {
+      //runEffect();
+      $(".jquerySlide").hide();
+      //$("nav").css({'height': 65 + "px" });
+    });
 
 }
