@@ -37,16 +37,36 @@ nav ul li{
   /**/
   /*text-align: center;*/
 }
-
-nav div.jquerySlide{
+.libar{
+  position:relative;
+}
+nav div.jquerySlide1{
   height:100px;
   position:absolute;
+  left:0px;
+  width:200px;
+  background-color:rgb(10, 202, 232);
+}
+
+nav div.jquerySlide2{
+  height:100px;
+  position:absolute;
+  left:0px;
+  width:200px;
+  background-color:rgb(10, 202, 232);
+}
+
+nav div.jquerySlide3{
+  height:100px;
+  position:absolute;
+  left:0px;
+  width:200px;
   background-color:rgb(10, 202, 232);
 }
 
 /*섹션 아티클 어사이드 배치는 float와 padding, margin의 복습입니다!*/
 #mainWrapper{
-  height:800px;
+  height:300px;
   padding-top:10px;
 }
 section{
@@ -84,4 +104,9 @@ aside{
 
 footer{
   background-color: rgb(240, 34, 106);
+  height:80px;
+  width:960px;
+  /*positon:absolute;*/
+  position:absolute;
+  bottom:0;
 }

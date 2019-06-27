@@ -18,6 +18,9 @@ jQuery( document ).ready(function( $ ) {
 
 
 });
+
+
+
 </script>*/
 //자바스크립트 실습
 //실습 1
@@ -56,19 +59,19 @@ function test4(){
 
 //실습 5, 아이디로 제어
 function test5(){
-  var lis = document.getElementById('li1')
+  var lis = document.getElementById('li1');
   lis.style.color='black';
 
-  var lis = document.getElementById('li2')
+  var lis = document.getElementById('li2');
   lis.style.color='green';
 
-  var lis = document.getElementById('li3')
+  var lis = document.getElementById('li3');
   lis.style.color='pink';
 
-  var lis = document.getElementById('li4')
+  var lis = document.getElementById('li4');
   lis.style.color= 'rgb(4, 91, 41)';
 
-  var lis = document.getElementById('li5')
+  var lis = document.getElementById('li5');
   lis.style.color= 'rgb(228, 13, 146)';
 
 }
@@ -85,7 +88,19 @@ window.onload = function(){
     })
     */
 
-    //제이커리 사용하기
+    $(".slide").on("mouseenter", function(){
+
+
+
+    });
+
+
+
+
+
+
+    //제이커리 사용하기(큰메뉴)
+    /*
     $( ".menubar" ).on( "mouseenter", function() {
       //runEffect();
       $(".jquerySlide").show();
@@ -97,5 +112,49 @@ window.onload = function(){
       $(".jquerySlide").hide();
       //$("nav").css({'height': 65 + "px" });
     });
+    */
 
+    $( ".li1" ).on( "mouseenter", function() {
+      //runEffect();
+      $(".jquerySlide1").show();
+
+    });
+    //$("nav").css({'height': 165 + "px" });
+    $( ".li1" ).on( "mouseleave", function() {
+      //runEffect();
+      $(".jquerySlide1").hide();
+      //$("nav").css({'height': 65 + "px" });
+    });
+
+
+
+
+
+    $( ".li2" ).on( "mouseenter", function() {
+      //runEffect();
+      $(".jquerySlide2").show();
+
+    });
+    //$("nav").css({'height': 165 + "px" });
+    $( ".li2" ).on( "mouseleave", function() {
+      //runEffect();
+      $(".jquerySlide2").hide();
+      //$("nav").css({'height': 65 + "px" });
+    });
+
+
+
+
+
+    $( ".li3" ).on( "mouseenter", function() {
+      //runEffect();
+      $(".jquerySlide3").show();
+
+    });
+    //$("nav").css({'height': 165 + "px" });
+    $( ".li3" ).on( "mouseleave", function() {
+      //runEffect();
+      $(".jquerySlide3").hide();
+      //$("nav").css({'height': 65 + "px" });
+    });
 }
